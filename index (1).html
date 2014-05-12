@@ -1,0 +1,136 @@
+<!doctype html> 
+<html lang="en">
+<head>
+	<title>Logan Greer</title>
+	<meta charset="utf-8">
+	<!-- SMOOTH SCROLL -->
+
+
+
+	<link rel="stylesheet" href="style.css">
+
+	<!-- favicon -->
+	<link rel="icon" type="image/png" href="images/favicon.ico">
+</head>
+
+<body>
+
+	<a name="home"><header></a>
+		<h1><img src="images/loganlogo.png"</h1>
+		<h2>Front-end development & UX Design</h2>
+
+	</header> <!-- HEADER CLOSE! -->
+
+
+
+
+
+	<div class="nav">	
+			<a href="#home"><img src="images/panther.jpg"></a>
+		<ul>
+			<li><a href="#about">About</a></li>
+			<li><a href="#work">Work</a></li>
+			<li><a ref="#contact">Contact</a>
+				<li><a href="http://www.logancodes.wordpress.com">Blog</a></li>
+		</ul>
+	</div> <!-- CLOSES NAV!	 -->
+
+	<a id="about"><div class="about">
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, mollitia, assumenda, fugit, consequuntur expedita numquam eum delectus alias repellat sed cum saepe similique quidem minima maiores doloribus eius ratione fuga!</p>
+
+
+
+	</div></a> <!-- CLOSES ABOUT DIV -->
+
+
+	<a name="work"><div class="work">
+
+	
+		<div class="dev">
+				
+
+		
+		<div class="ux">
+				
+		</div>
+
+     </div></a><!--  CLOSES WORK! -->
+
+	<a name="contact"><div class="footer">
+
+	</div></a> <!-- CLOSES FOOTER! -->
+
+
+
+
+</body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+ <script> 
+	$(function() {
+		$('a[href*=#]:not([href=#])').click(function() {
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				if (target.length) {
+					$('html,body').animate({
+						scrollTop: target.offset().top
+					}, 1000);r
+					return false;
+				}
+			}
+		});
+	});
+</script>
+<script> 	
+		$(document).ready(function() {  
+		var stickyNavTop = $('.nav').offset().top;  
+
+		var stickyNav = function(){  
+			var scrollTop = $(window).scrollTop();  
+
+			if (scrollTop > stickyNavTop) {   
+				$('.nav').addClass('sticky');  
+			} else {  
+				$('.nav').removeClass('sticky');   
+			}  
+		};  
+
+		stickyNav();  
+
+		$(window).scroll(function() {  
+			stickyNav();  
+		});  
+	});  
+
+</script>
+<script>
+	$(document).ready(function(){
+		$("h1").hover(function(){
+			$("h1").animate({fontSize:"2em"});
+		});	
+
+		$("h2").hover(function(){
+			$("h2").animate({fontSize:"2em"});
+
+		});
+
+		$( "h1" ).hover(function() {
+			$( "h2" ).mouseleave(function(){
+				$("h2").animate({fontSize:"2em"});
+					$("h1").animate({fontSize:"2em"});
+
+			});
+
+		});
+
+
+
+
+
+	});
+
+</script>
+<!-- End of SMOOTH SCROLL -->
+</html>
