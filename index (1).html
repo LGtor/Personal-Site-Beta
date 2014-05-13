@@ -5,7 +5,8 @@
 	<meta charset="utf-8">
 	<!-- SMOOTH SCROLL -->
 
-
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 	<link rel="stylesheet" href="style.css">
 
@@ -26,7 +27,7 @@
 
 
 	<div class="nav">	
-			<a href="#home"><img src="images/panther.jpg"></a>
+			<img src="images/loganlogo.png">
 		<ul>
 			<li><a href="#about">About</a></li>
 			<li><a href="#work">Work</a></li>
@@ -36,7 +37,10 @@
 	</div> <!-- CLOSES NAV!	 -->
 
 	<a id="about"><div class="about">
-			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, mollitia, assumenda, fugit, consequuntur expedita numquam eum delectus alias repellat sed cum saepe similique quidem minima maiores doloribus eius ratione fuga!</p>
+		<img src="images/logan.jpg">
+		
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, mollitia, assumenda, fugit, consequuntur expedita numquam eum delectus alias repellat sed cum saepe similique quidem minima maiores doloribus eius ratione fuga! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, non, ab, possimus laudantium nemo quod .</p>
+		
 
 
 
@@ -108,18 +112,18 @@
 <script>
 	$(document).ready(function(){
 		$("h1").hover(function(){
-			$("h1").animate({fontSize:"2em"});
+			$("h1").animate({fontSize:"1em"});
 		});	
 
 		$("h2").hover(function(){
-			$("h2").animate({fontSize:"2em"});
+			$("h2").animate({fontSize:"3em"});
 
 		});
 
 		$( "h1" ).hover(function() {
 			$( "h2" ).mouseleave(function(){
 				$("h2").animate({fontSize:"2em"});
-					$("h1").animate({fontSize:"2em"});
+					$("h1").animate({fontSize:"3em"});
 
 			});
 
